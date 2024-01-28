@@ -7,7 +7,10 @@
 #define CHA_CHA_POLY_IV_SIZE 12  // fixed
 #define CHA_CHA_POLY_AUTH_SIZE 16
 #define CHA_CHA_POLY_TAG_SIZE 16
-#define CHA_CHA_POLY_MESSAGE_SIZE 60
+
+#ifndef CHA_CHA_POLY_MESSAGE_SIZE
+#define CHA_CHA_POLY_MESSAGE_SIZE 100
+#endif
 
 class ChaChaPolyHelper
 {
